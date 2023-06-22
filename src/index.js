@@ -27,7 +27,7 @@ if (difficulty === "easy") {
 }
   
 function chooseHole(holes) {
-  const index = randomInteger(0; 8);
+  const index = randomInteger(0, 8);
   const hole = holes[index];
   if (hole === lastHole) {
     return chooseHole(holes);
@@ -46,7 +46,7 @@ function gameOver() {
 }
 }
 function showUp() {
-  let delay = setDelay(difficulty);)
+  let delay = setDelay(difficulty);
   const hole = chooseHole(holes);
   return showAndHide(hole, delay);
 }
